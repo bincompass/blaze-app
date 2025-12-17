@@ -1,0 +1,165 @@
+{
+  "herov1": {
+    "title": "TRANSFORM",
+    "desc": "We create digital experiences that captivate audiences and drive measurable business growth for ambitious brands.",
+    "button": {
+      "btn1": "Download",
+      "btnurl1": "#"
+    },
+    "img": "/assets/img/hero-1.png",
+    "typedText": ["YOUR BRAND WITH", "CUTTING-EDGE MARKETING"]
+  },
+  "aboutIntro": {
+    "bgImg": "/assets/img/bg-about.png",
+    "title": "Who We Are",
+    "desc": "We are a dynamic team of creative professionals passionate about transforming brands through innovative digital solutions. With years of experience in marketing, design, and development, we understand what it takes to make your brand stand out in today's competitive landscape. Our expertise spans strategic planning, creative design, and cutting-edge technology to deliver results that matter."
+  },
+  "aboutSection": {
+    "leftSection": {
+      "title": "Who We Are",
+      "desc": "We are a passionate team of creative professionals dedicated to transforming brands through innovative digital solutions. With years of experience across marketing, design, and development, we understand what it takes to make your brand stand out in today's competitive landscape."
+    },
+    "rightSection": {
+      "title": "Our Vision",
+      "desc": "We create digital experiences that captivate audiences and drive measurable business growth for ambitious brands. Every project is an opportunity to blend creativity with strategy, ensuring your brand not only looks exceptional but also performs exceptionally in the digital space."
+    }
+  },
+  "about": {
+    "sectionHeading": {
+      "title": "Our <span>Work</span>",
+      "desc": "A selection of our impactful projects that drive results and transformations."
+    },
+    "projects": [
+      {
+        "title": "E-Commerce Platform",
+        "desc": "Complete digital transformation for retail business with 300% increase in online sales.",
+        "image": "/assets/img/screenshots/screenshot-1.jpg"
+      },
+      {
+        "title": "Brand Identity Design",
+        "desc": "Comprehensive brand development that established market leadership in tech industry.",
+        "image": "/assets/img/screenshots/screenshot-2.jpg"
+      },
+      {
+        "title": "Digital Marketing Campaign",
+        "desc": "Multi-channel campaign that generated 500% ROI and expanded customer base globally.",
+        "image": "/assets/img/screenshots/screenshot-3.jpg"
+      },
+      {
+        "title": "Mobile App Development",
+        "desc": "User-centric mobile application with over 100K downloads in the first month.",
+        "image": "/assets/img/blog/blog-thumb-1.jpg"
+      },
+      {
+        "title": "Website Redesign",
+        "desc": "Modern, responsive website that improved user engagement by 250%.",
+        "image": "/assets/img/blog/blog-thumb-2.jpg"
+      },
+      {
+        "title": "Social Media Strategy",
+        "desc": "Comprehensive social media presence that built community of 50K+ followers.",
+        "image": "/assets/img/blog/blog-thumb-3.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "leftSection": {
+      "title": "Get in touch",
+      "subtitle": "Let's build something great.",
+      "desc": "Whatever you have in mind for your project or if you just want to explore possibilities, we would love to hear from you."
+    },
+    "form": {
+      "title": "Send us a message",
+      "submitBtnLabel": "Send Message"
+    }
+  },
+  "funfacts": {
+    "bgImg": "/assets/img/counter-bg.jpg",
+    "facts": [
+      {
+        "title": "Faster",
+        "icon": "pe-7s-magic-wand",
+        "number": "100",
+        "unit": "%"
+      },
+      {
+        "title": "Cup of Coffee",
+        "icon": "pe-7s-coffee",
+        "number": "900"
+      },
+      {
+        "title": "Active Clients",
+        "icon": "pe-7s-check",
+        "number": "10000"
+      },
+      {
+        "title": "Peoples Love",
+        "icon": "pe-7s-like",
+        "number": "1276"
+      }
+    ]
+  },
+  "accordion": {
+    "sectionHeading": {
+      "title": "Frequently Asked <span>Questions</span>",
+      "desc": "Get answers to the most common questions about our services and process."
+    },
+    "title": "Have Questions? We Have Answers",
+    "image": "/assets/img/faq.jpg",
+    "accordionContent": [
+      {
+        "title": "What services do you offer?",
+        "content": "We offer comprehensive digital marketing services including brand strategy, web development, digital marketing campaigns, social media management, and creative design solutions tailored to your business needs."
+      },
+      {
+        "title": "How long does a typical project take?",
+        "content": "Project timelines vary depending on scope and complexity. A simple website redesign might take 4-6 weeks, while a complete brand transformation could take 8-12 weeks. We'll provide a detailed timeline during our initial consultation."
+      },
+      {
+        "title": "Do you work with small businesses?",
+        "content": "Absolutely! We work with businesses of all sizes, from startups to enterprise companies. We understand that every business has unique needs and budget considerations, and we tailor our services accordingly."
+      },
+      {
+        "title": "What is your design process?",
+        "content": "Our process starts with understanding your goals and target audience. We then move through research, strategy, design concepts, feedback rounds, and final implementation. We keep you involved at every step to ensure the final result exceeds your expectations."
+      },
+      {
+        "title": "Do you provide ongoing support?",
+        "content": "Yes, we offer various ongoing support packages including website maintenance, content updates, performance monitoring, and continuous optimization to ensure your digital presence stays current and effective."
+      }
+    ]
+  },
+  "features": {
+    "sectionHeading": {
+      "title": "OUR <span>SERVICES</span>",
+      "desc": "We offer comprehensive digital marketing and branding solutions to help your business thrive in competitive markets"
+    },
+    "singleFeature": {
+      "featurePart1": [
+        {
+          "title": "Digital Marketing",
+          "icon": "pe-7s-graph1",
+          "desc": "Data-driven strategies to maximize your digital presence and ROI across all platforms.",
+          "btnText": "Learn More",
+          "btnUrl": "#"
+        },
+        {
+          "title": "Brand Strategy",
+          "icon": "pe-7s-magic-wand",
+          "desc": "Comprehensive brand development to establish your unique market position and identity.",
+          "btnText": "Learn More",
+          "btnUrl": "#"
+        },
+        {
+          "title": "Web Development",
+          "icon": "pe-7s-display2",
+          "desc": "Custom websites and applications designed to convert visitors into loyal customers.",
+          "btnText": "Learn More",
+          "btnUrl": "#"
+        }
+      ],
+      "image": "/assets/img/feature-image.png",
+      "featurePart2": []
+    }
+  }
+}
