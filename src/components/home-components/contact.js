@@ -2,15 +2,10 @@ import React, { Component } from 'react';
 import homedata from '../../data/home.json';
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let contactInfo = homedata.contact;
     let leftSection = contactInfo.leftSection;
     let formSection = contactInfo.form;
-    let publicUrl = process.env.PUBLIC_URL;
 
     return (
       <section
