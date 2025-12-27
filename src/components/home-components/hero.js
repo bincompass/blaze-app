@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
 import homedata from '../../data/home.json';
 
 class Hero extends Component {
@@ -7,44 +6,124 @@ class Hero extends Component {
     let getData = homedata.herov1;
 
     return (
-      <section id="home" className="text-left hero-section-1">
-        <Container>
-          <Row className="full-height align-items-center">
-            <div className="hero-content col-lg-6 p-100px-t p-50px-b md-p-10px-b">
-              <h1 className="m-30px-b">
-                <span style={{ color: '#ed4425' }}>{getData.title}</span>
-                <br />
-                <span style={{ fontWeight: 'bold', color: '#ffffff' }}>
-                  YOUR BRAND WITH
-                </span>
-                <br />
-                <span
+      <section
+        id="home"
+        className="hero-section-fullscreen"
+        style={{
+          backgroundImage: `url(${getData.img})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '100vh',
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        {/* Overlay */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            zIndex: 1,
+          }}
+        ></div>
+        {/* Content container */}
+        <div
+          className="container"
+          style={{
+            position: 'relative',
+            zIndex: 2,
+          }}
+        >
+          <div className="row">
+            <div className="col-lg-7 col-md-9">
+              <div
+                className="hero-content"
+                style={{
+                  padding: '32px',
+                  background: 'rgba(0, 0, 0, 0.6)',
+                  backdropFilter: 'blur(5px)',
+                  borderRadius: '12px',
+                  width: '100%',
+                  marginBottom: '30px',
+                }}
+              >
+                <h1 style={{ marginBottom: '25px' }}>
+                  <span
+                    style={{
+                      color: '#ed4425',
+                      fontSize: '5rem',
+                      fontWeight: 'bold',
+                      display: 'block',
+                      lineHeight: '1',
+                      marginBottom: '10px',
+                    }}
+                  >
+                    {getData.title}
+                  </span>
+                  <span
+                    style={{
+                      fontWeight: 'bold',
+                      color: '#ffffff',
+                      fontSize: '4rem',
+                      display: 'block',
+                      lineHeight: '1.1',
+                      marginBottom: '5px',
+                    }}
+                  >
+                    YOUR BRAND WITH
+                  </span>
+                  <span
+                    style={{
+                      fontWeight: 'normal',
+                      color: '#ffffff',
+                      fontSize: '3.2rem',
+                      display: 'block',
+                      lineHeight: '1.1',
+                    }}
+                  >
+                    CUTTING-EDGE MARKETING
+                  </span>
+                </h1>
+                <p
                   style={{
-                    fontWeight: 'normal',
-                    color: '#ffffff',
-                    fontSize: '0.85em',
+                    color: '#cccccc',
+                    fontSize: '1.5rem',
+                    lineHeight: '1.7',
+                    marginBottom: '0',
+                    maxWidth: '90%',
                   }}
                 >
-                  CUTTING-EDGE MARKETING
-                </span>
-              </h1>
-              <p className="m-50px-b md-m-30px-b" style={{ color: '#ffffff' }}>
-                {getData.desc}
-              </p>
-              <div></div>
-              <a href={getData.button.btnurl1} className="primary-btn">
-                Read More
-              </a>
+                  {getData.desc}
+                </p>
+              </div>
+              <div style={{ paddingLeft: '32px' }}>
+                <a
+                  href={getData.button.btnurl1}
+                  className="primary-btn"
+                  style={{
+                    height: '40px',
+                    borderRadius: '25px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    paddingLeft: '40px',
+                    paddingRight: '40px',
+                    fontSize: '1.5rem',
+                    lineHeight: '40px',
+                    fontWeight: '500',
+                  }}
+                >
+                  Read More
+                </a>
+              </div>
             </div>
-            <div className="hero-image col-lg-6 p-100px-t p-50px-b md-p-10px-t">
-              <img
-                className="img-fluid"
-                src={getData.img}
-                alt={getData.title}
-              />
-            </div>
-          </Row>
-        </Container>
+          </div>
+        </div>
       </section>
     );
   }

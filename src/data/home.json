@@ -6,7 +6,7 @@
       "btn1": "Download",
       "btnurl1": "#"
     },
-    "img": "/assets/img/hero-1.png",
+    "img": "/assets/img/hero.png",
     "typedText": ["YOUR BRAND WITH", "CUTTING-EDGE MARKETING"]
   },
   "aboutIntro": {
@@ -100,7 +100,7 @@
       "desc": "Get answers to the most common questions about our services and process."
     },
     "title": "Have Questions? We Have Answers",
-    "image": "/assets/img/faq.jpg",
+    "image": "/assets/img/faq.png",
     "accordionContent": [
       {
         "title": "What services do you offer?",
@@ -133,22 +133,15 @@
       "featurePart1": [
         {
           "title": "Digital Marketing",
-          "icon": "pe-7s-graph1",
+          "icon": "/assets/img/icons/Digital_M_Icon03.png",
           "desc": "Data-driven strategies to maximize your digital presence and ROI across all platforms.",
           "btnText": "Learn More",
           "btnUrl": "#"
         },
         {
           "title": "Lead Generation",
-          "icon": "pe-7s-target",
+          "icon": "/assets/img/icons/Lead_G_icon02.png",
           "desc": "Strategic lead generation campaigns that identify and convert qualified prospects into customers.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
-        },
-        {
-          "title": "Social Media",
-          "icon": "pe-7s-share",
-          "desc": "Engaging content strategies and campaigns that build communities around your brand.",
           "btnText": "Learn More",
           "btnUrl": "#"
         }
@@ -157,21 +150,21 @@
       "featurePart2": [
         {
           "title": "Event Essentials",
-          "icon": "pe-7s-date",
+          "icon": "/assets/img/icons/Event_icon01.png",
           "desc": "Comprehensive event planning and marketing solutions that create memorable brand experiences.",
           "btnText": "Learn More",
           "btnUrl": "#"
         },
         {
           "title": "Brand Identity",
-          "icon": "pe-7s-diamond",
+          "icon": "/assets/img/icons/Brand_Idintity_Icon05.png",
           "desc": "Distinctive visual identities that capture your brand's essence and resonate with your audience.",
           "btnText": "Learn More",
           "btnUrl": "#"
         },
         {
           "title": "Media Production",
-          "icon": "pe-7s-video",
+          "icon": "/assets/img/icons/Media_Production_Icon04.png",
           "desc": "Captivating video content that tells your brand story and connects with your audience emotionally.",
           "btnText": "Learn More",
           "btnUrl": "#"
