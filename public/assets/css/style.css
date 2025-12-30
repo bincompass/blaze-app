@@ -153,6 +153,9 @@ blockquote {
 .primary-bg {
   background: #ed4425;
 }
+.bg-primary {
+  background: #ed4425 !important;
+}
 .bg-gray {
   background: #deeefc;
 }
@@ -1110,6 +1113,329 @@ button.primary-btn {
   margin-left: 50px;
 }
 
+/* About Us Section Custom Styles */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url('../img/bg-about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-left,
+.about-right {
+  position: relative;
+  z-index: 1;
+}
+
+.about-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.about-left h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.about-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.about-right p {
+  color: white;
+  font-size: 2.3rem;
+  margin: 0;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* About Section Responsive Styles */
+@media (max-width: 991px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .about-left {
+    padding: 40px;
+  }
+
+  .about-left h2 {
+    font-size: 4rem;
+  }
+
+  .about-right {
+    text-align: center;
+    padding: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .about-right p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-left {
+    padding: 0 16px;
+  }
+
+  .about-left h2 {
+    font-size: 4rem;
+  }
+
+  .about-right {
+    padding: 0 16px;
+  }
+
+  .about-right p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+/*  ----------------------------------------------------
+6.5 OUR WORK SECTION
+-------------------------------------------------------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.work-card {
+  perspective: 1000px;
+  height: 460px;
+  cursor: pointer;
+  grid-column: span 2;
+}
+
+.work-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.work-card:hover .work-card-inner {
+  transform: rotateY(180deg);
+}
+
+.work-card-front,
+.work-card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.work-card-front {
+  height: 100%;
+}
+
+.work-card-back {
+  height: 100%;
+}
+
+.work-card-front {
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.work-card-back {
+  background-color: #ed4425;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.work-card-content {
+  padding: 0 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-card-content h3 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.work-card-content p {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-card-back p {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Work Section Responsive Styles */
+@media (max-width: 991px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .work-card {
+    height: 400px;
+  }
+  
+  .work-card-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .work-card {
+    height: auto;
+    min-height: 320px;
+  }
+  
+  .work-card-inner {
+    min-height: 320px;
+  }
+  
+  .work-card-front,
+  .work-card-back {
+    position: absolute;
+    min-height: 320px;
+  }
+  
+  .work-card-image {
+    height: 180px;
+  }
+  
+  .work-card-front {
+    padding: 12px;
+  }
+  
+  .work-card-content {
+    padding: 0 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .work-card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
+  
+  .work-card-content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+  }
+  
+  .work-card-back p {
+    font-size: 1.3rem;
+    padding: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-grid {
+    gap: 12px;
+  }
+  
+  .work-card {
+    min-height: 300px;
+  }
+  
+  .work-card-inner {
+    min-height: 300px;
+  }
+  
+  .work-card-front,
+  .work-card-back {
+    min-height: 300px;
+  }
+  
+  .work-card-image {
+    height: 160px;
+  }
+  
+  .work-card-front {
+    padding: 10px;
+  }
+  
+  .work-card-content {
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .work-card-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+  
+  .work-card-content p {
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+  
+  .work-card-back p {
+    font-size: 1.15rem;
+    padding: 15px;
+    line-height: 1.3;
+  }
+}
+
 /*  ----------------------------------------------------
 7. HOW WORKS
 -------------------------------------------------------- */
@@ -1679,6 +2005,49 @@ div#accordion .card-body {
 /*  ----------------------------------------------------
 15. CONTACT SECTION
 -------------------------------------------------------- */
+.contact-heading {
+  font-size: 52px;
+}
+
+.contact-subtitle {
+  font-size: 32px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .contact-heading {
+    font-size: 42px;
+  }
+  
+  .contact-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-heading {
+    font-size: 44px;
+  }
+  
+  .contact-subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 40px;
+  }
+  
+  .contact-subtitle {
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+}
 .contact-block {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 2px;

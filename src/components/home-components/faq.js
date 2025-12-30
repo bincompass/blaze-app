@@ -63,7 +63,7 @@ class FAQ extends Component {
       <section
         id="faq"
         className="pt100 pb100"
-        style={{ backgroundColor: 'rgb(19, 19, 19)' }}
+        style={{ backgroundColor: '#2a2a2a' }}
       >
         <div className="container">
           <div className="row">

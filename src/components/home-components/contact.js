@@ -10,36 +10,35 @@ class Contact extends Component {
     return (
       <section
         id="contact"
-        className="pt100 pb100"
         style={{
-          backgroundColor: 'rgba(10, 10, 10, 0.8)',
+          backgroundColor: 'rgb(48, 48, 48)',
+          padding: '24px 0',
         }}
       >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 md-m-50px-b">
+            <div className="col-lg-6 px-b">
               <div
                 style={{
                   padding: '40px 0',
                 }}
               >
                 <h2
+                  className="contact-heading"
                   style={{
                     color: '#ed4425',
-                    marginBottom: '20px',
-                    fontSize: '42px',
+                    marginBottom: '0',
                     fontWeight: '700',
-                    textTransform: 'uppercase',
+                    textTransform: 'capitalize',
                     letterSpacing: '2px',
                   }}
                 >
                   {leftSection.title}
                 </h2>
                 <h3
+                  className="contact-subtitle"
                   style={{
                     color: '#ffffff',
-                    marginBottom: '30px',
-                    fontSize: '32px',
                     fontWeight: '600',
                     lineHeight: '1.3',
                   }}
@@ -61,24 +60,12 @@ class Contact extends Component {
             <div className="col-lg-6">
               <div
                 style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  backgroundColor: 'rgb(19, 19, 19)',
+                  border: 'none',
                   borderRadius: '15px',
-                  padding: '40px',
+                  padding: '24px',
                 }}
               >
-                <h4
-                  style={{
-                    color: '#ffffff',
-                    marginBottom: '30px',
-                    fontSize: '24px',
-                    fontWeight: '600',
-                    textAlign: 'center',
-                  }}
-                >
-                  {formSection.title}
-                </h4>
                 <form
                   id="contact-form"
                   action="https://formspree.io/f/xzdpoage"
@@ -86,6 +73,17 @@ class Contact extends Component {
                 >
                   <div className="row">
                     <div className="col-md-6">
+                      <label
+                        htmlFor="contact-name"
+                        style={{
+                          color: '#ed4425',
+                          fontWeight: '600',
+                          marginBottom: '8px',
+                          display: 'block',
+                        }}
+                      >
+                        Name
+                      </label>
                       <input
                         name="name"
                         className="form-control"
@@ -98,8 +96,8 @@ class Contact extends Component {
                         pattern="[a-zA-Z\s]+"
                         title="Please enter a valid name (letters and spaces only)"
                         style={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          backgroundColor: 'rgb(19, 19, 19)',
+                          border: '1px solid #ffffff',
                           borderRadius: '8px',
                           padding: '15px',
                           color: '#ffffff',
@@ -109,6 +107,17 @@ class Contact extends Component {
                       />
                     </div>
                     <div className="col-md-6">
+                      <label
+                        htmlFor="contact-email"
+                        style={{
+                          color: '#ed4425',
+                          fontWeight: '600',
+                          marginBottom: '8px',
+                          display: 'block',
+                        }}
+                      >
+                        Email
+                      </label>
                       <input
                         name="email"
                         className="form-control"
@@ -119,8 +128,8 @@ class Contact extends Component {
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         title="Please enter a valid email address"
                         style={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          backgroundColor: 'rgb(19, 19, 19)',
+                          border: '1px solid #ffffff',
                           borderRadius: '8px',
                           padding: '15px',
                           color: '#ffffff',
@@ -130,6 +139,17 @@ class Contact extends Component {
                       />
                     </div>
                     <div className="col-sm-12">
+                      <label
+                        htmlFor="contact-subject"
+                        style={{
+                          color: '#ed4425',
+                          fontWeight: '600',
+                          marginBottom: '8px',
+                          display: 'block',
+                        }}
+                      >
+                        Subject
+                      </label>
                       <input
                         name="subject"
                         className="form-control"
@@ -141,8 +161,8 @@ class Contact extends Component {
                         maxLength="100"
                         title="Please enter a subject (3-100 characters)"
                         style={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          backgroundColor: 'rgb(19, 19, 19)',
+                          border: '1px solid #ffffff',
                           borderRadius: '8px',
                           padding: '15px',
                           color: '#ffffff',
@@ -152,6 +172,17 @@ class Contact extends Component {
                       />
                     </div>
                     <div className="col-sm-12">
+                      <label
+                        htmlFor="contact-message"
+                        style={{
+                          color: '#ed4425',
+                          fontWeight: '600',
+                          marginBottom: '8px',
+                          display: 'block',
+                        }}
+                      >
+                        Message
+                      </label>
                       <textarea
                         name="message"
                         className="form-control"
@@ -163,8 +194,8 @@ class Contact extends Component {
                         rows="5"
                         title="Please enter your message (10-1000 characters)"
                         style={{
-                          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                          border: '1px solid rgba(255, 255, 255, 0.2)',
+                          backgroundColor: 'rgb(19, 19, 19)',
+                          border: '1px solid #ffffff',
                           borderRadius: '8px',
                           padding: '15px',
                           color: '#ffffff',

@@ -1,13 +1,12 @@
 {
   "herov1": {
-    "title": "TRANSFORM",
-    "desc": "We create digital experiences that captivate audiences and drive measurable business growth for ambitious brands.",
+    "title": "TURN",
+    "desc": "We help brands grow through data-driven strategy, creative storytelling, and measurable performance.",
     "button": {
       "btn1": "Download",
       "btnurl1": "#"
     },
-    "img": "/assets/img/hero.png",
-    "typedText": ["YOUR BRAND WITH", "CUTTING-EDGE MARKETING"]
+    "img": "/assets/img/hero.png"
   },
   "aboutIntro": {
     "bgImg": "/assets/img/bg-about.png",
@@ -32,28 +31,23 @@
     "projects": [
       {
         "title": "InCompass",
-        "desc": "Technology company branding and digital marketing solutions for innovation leadership.",
-        "image": "/assets/img/companies/company-4.jpg"
+        "desc": "Technology company branding and digital marketing solutions for innovation leadership."
       },
       {
         "title": "ALMASA Real Estate",
-        "desc": "Complete digital transformation and brand identity for luxury real estate development.",
-        "image": "/assets/img/companies/company-1.jpg"
+        "desc": "Complete digital transformation and brand identity for luxury real estate development."
       },
       {
         "title": "CCI",
-        "desc": "Comprehensive brand development and marketing strategy for corporate consulting firm.",
-        "image": "/assets/img/companies/company-2.jpg"
+        "desc": "Comprehensive brand development and marketing strategy for corporate consulting firm."
       },
       {
         "title": "Century Capital",
-        "desc": "Financial services brand identity and digital presence that established market trust.",
-        "image": "/assets/img/companies/company-3.jpg"
+        "desc": "Financial services brand identity and digital presence that established market trust."
       },
       {
         "title": "JEDAR Real Estate",
-        "desc": "Premium real estate brand identity and marketing campaigns for luxury properties.",
-        "image": "/assets/img/companies/company-5.jpg"
+        "desc": "Premium real estate brand identity and marketing campaigns for luxury properties."
       }
     ]
   },
@@ -127,7 +121,7 @@
   "features": {
     "sectionHeading": {
       "title": "OUR <span>SERVICES</span>",
-      "desc": "We offer comprehensive digital marketing and branding solutions to help your business thrive in competitive markets"
+      "desc": "We combine strategy, creativity, and performance to build marketing that works."
     },
     "singleFeature": {
       "featurePart1": [

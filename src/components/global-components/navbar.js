@@ -50,7 +50,11 @@ class Navbar extends Component {
           className={`${this.state.addClass} navbar navbar-inverse navbar-expand-lg header-nav fixed-top header`}
         >
           <div className="container">
-            <a className="navbar-brand logo" href="/">
+            <a
+              className="navbar-brand logo"
+              href="/"
+              style={{ marginLeft: '-8px', display: 'block' }}
+            >
               <img
                 className="logo-dark"
                 src={process.env.PUBLIC_URL + '/assets/img/logo.png'}

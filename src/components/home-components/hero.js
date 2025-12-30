@@ -76,7 +76,7 @@ class Hero extends Component {
                       marginBottom: '5px',
                     }}
                   >
-                    YOUR BRAND WITH
+                    ATTENTION
                   </span>
                   <span
                     style={{
@@ -87,7 +87,7 @@ class Hero extends Component {
                       lineHeight: '1.1',
                     }}
                   >
-                    CUTTING-EDGE MARKETING
+                    INTO MEASURABLE GROWTH
                   </span>
                 </h1>
                 <p
@@ -118,7 +118,7 @@ class Hero extends Component {
                     fontWeight: '500',
                   }}
                 >
-                  Read More
+                  Let’s Work Together
                 </a>
               </div>
             </div>
