@@ -1,9 +1,11 @@
 {
   "herov1": {
     "title": "TURN",
+    "title2": "ATTENTION",
+    "title3": "into Growth Flawless events.",
     "desc": "We help brands grow through data-driven strategy, creative storytelling, and measurable performance.",
     "button": {
-      "btn1": "Download",
+      "btn1": "Let’s Work Together",
       "btnurl1": "#"
     },
     "img": "/assets/img/hero.png"
@@ -11,7 +13,21 @@
   "aboutIntro": {
     "bgImg": "/assets/img/bg-about.png",
     "title": "Who We Are",
-    "desc": "We are a dynamic team of creative professionals passionate about transforming brands through innovative digital solutions. With years of experience in marketing, design, and development, we understand what it takes to make your brand stand out in today's competitive landscape. Our expertise spans strategic planning, creative design, and cutting-edge technology to deliver results that matter."
+    "desc": "Blaze Media is an innovative marketing and events agency dedicated to helping businesses grow. We create impactful campaigns and unforgettable experiences that connect brands with the right audience and deliver real impact.\n\nWe believe in building strong partnerships with our clients, understanding their unique needs, and creating tailored solutions that exceed expectations.",
+    "cards": [
+      {
+        "title": "Vision",
+        "desc": "To be the leading marketing and events agency recognized for creativity, strong execution, and consistent results for our clients."
+      },
+      {
+        "title": "Mission",
+        "desc": "To help businesses grow through focused marketing strategies and well-executed event experiences that elevate their brand and increase their revenue."
+      },
+      {
+        "title": "Promise",
+        "desc": "Connecting the right audiences. Delivering real growth."
+      }
+    ]
   },
   "aboutSection": {
     "leftSection": {
@@ -126,16 +142,16 @@
     "singleFeature": {
       "featurePart1": [
         {
-          "title": "Digital Marketing",
-          "icon": "/assets/img/icons/Digital_M_Icon03.png",
-          "desc": "Data-driven strategies to maximize your digital presence and ROI across all platforms.",
+          "title": "Markitchen",
+          "icon": "/assets/img/portfolio/markitchen.png",
+          "desc": "Digital Marketing that maximizes presence and ROI across all platforms.",
           "btnText": "Learn More",
           "btnUrl": "#"
         },
         {
-          "title": "Lead Generation",
-          "icon": "/assets/img/icons/Lead_G_icon02.png",
-          "desc": "Strategic lead generation campaigns that identify and convert qualified prospects into customers.",
+          "title": "LeadGen",
+          "icon": "/assets/img/portfolio/lead-gen.png",
+          "desc": "Lead generation campaigns designed to identify and convert qualified leads into sales-ready prospects.",
           "btnText": "Learn More",
           "btnUrl": "#"
         }
@@ -144,26 +160,50 @@
       "featurePart2": [
         {
           "title": "Event Essentials",
-          "icon": "/assets/img/icons/Event_icon01.png",
-          "desc": "Comprehensive event planning and marketing solutions that create memorable brand experiences.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
-        },
-        {
-          "title": "Brand Identity",
-          "icon": "/assets/img/icons/Brand_Idintity_Icon05.png",
-          "desc": "Distinctive visual identities that capture your brand's essence and resonate with your audience.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
-        },
-        {
-          "title": "Media Production",
-          "icon": "/assets/img/icons/Media_Production_Icon04.png",
-          "desc": "Captivating video content that tells your brand story and connects with your audience emotionally.",
+          "icon": "/assets/img/portfolio/event-essentials.png",
+          "desc": "Where event planning, execution, and experience come together.",
           "btnText": "Learn More",
           "btnUrl": "#"
         }
       ]
     }
+  },
+  "work": {
+    "sectionHeading": {
+      "title": "OUR PORTFOLIO",
+      "desc": "A selection of projects that demonstrate how we turn strategy into measurable results."
+    },
+    "projects": [
+      {
+        "title": "Incompass",
+        "description": "Building a strong market presence from an early startup stage required clear brand positioning, high digital visibility, and effective lead generation in a competitive real estate market.",
+        "backText": "Blaze Media partnered with Incompass from its early stage to build the brand identity and establish a strong digital presence, implementing well-planned, performance-driven real estate marketing strategies."
+      },
+      {
+        "title": "CCI",
+        "description": "Strengthening CCI's position in the real estate resale market required a clear brand identity, strong digital visibility, and consistent generation of qualified leads in a competitive market.",
+        "backText": "Blaze Media partnered with CCI to build a strong brand identity and establish a solid digital presence, implementing well-planned, performance-driven marketing strategies tailored to the real estate resale market."
+      },
+      {
+        "title": "DAMAC",
+        "description": "Entering the Egyptian market required strong brand positioning, high visibility, and qualified lead generation for real estate exhibitions and advertising campaigns.",
+        "backText": "Blaze Media delivered performance-driven marketing strategies combining strong digital presence, precise targeting, and optimized campaigns to generate qualified leads and increase brand visibility in the Egyptian real estate market."
+      },
+      {
+        "title": "AL MASA",
+        "description": "Strengthening AL MASA's position in the real estate resale market required a clear brand identity, strong digital visibility, and consistent generation of qualified leads.",
+        "backText": "Blaze Media developed performance-driven marketing strategies focused on building a strong digital presence, precise audience targeting, and optimized campaigns tailored to the resale real estate market."
+      },
+      {
+        "title": "JADER Real Estate",
+        "description": "Driving sales within a specific location required high market visibility, precise audience targeting, and effective lead generation in the competitive Sheikh Zayed real estate market.",
+        "backText": "Blaze Media managed performance-driven paid advertising campaigns focused exclusively on the Sheikh Zayed area, utilizing precise targeting, optimized creatives, and continuous campaign optimization."
+      },
+      {
+        "title": "ArchITechs",
+        "description": "Driving measurable growth in the competitive IT market required enhanced digital visibility, precise targeting of key B2B decision-makers, and consistent generation of qualified leads.",
+        "backText": "Blaze Media acted as a marketing partner by delivering performance-driven paid advertising strategies that enhanced digital visibility, targeted key B2B decision-makers, and consistently generated qualified leads, driving measurable growth in a competitive IT market."
+      }
+    ]
   }
 }

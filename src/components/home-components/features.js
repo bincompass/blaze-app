@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import homedata from '../../data/home.json';
+import React, { Component } from "react";
+import homedata from "../../data/home.json";
 
 class Features extends Component {
   render() {
@@ -11,7 +11,7 @@ class Features extends Component {
       <section
         id="features"
         className="pt100 pb100"
-        style={{ backgroundColor: '#0a0a0a' }}
+        style={{ backgroundColor: "#0a0a0a" }}
       >
         <div className="container">
           <div className="row">
@@ -19,10 +19,10 @@ class Features extends Component {
               <div className="section-title text-center mb60">
                 <h2
                   dangerouslySetInnerHTML={{ __html: sectionHeadingInfo.title }}
-                  style={{ color: '#ed4425' }}
+                  style={{ color: "#ed4425" }}
                 ></h2>
                 <hr className="lines" />
-                <p style={{ color: '#ffffff' }}>{sectionHeadingInfo.desc}</p>
+                <p style={{ color: "#ffffff" }}>{sectionHeadingInfo.desc}</p>
               </div>
             </div>
           </div>
@@ -33,81 +33,82 @@ class Features extends Component {
                   <div
                     className="service-card"
                     style={{
-                      backgroundColor: '#303030',
-                      borderRadius: '15px',
-                      padding: '30px',
-                      height: '100%',
-                      border: '1px solid #333',
-                      display: 'flex',
-                      flexDirection: 'column',
+                      backgroundColor: "#303030",
+                      borderRadius: "15px",
+                      padding: "30px",
+                      height: "100%",
+                      border: "1px solid #333",
+                      display: "flex",
+                      flexDirection: "column",
                     }}
                   >
                     <div
                       style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        marginBottom: '20px',
+                        display: "flex",
+                        alignItems: "center",
+                        marginBottom: i === 0 ? "80px" : "30px",
                       }}
                     >
                       <img
                         src={element.icon}
                         alt={element.title}
                         style={{
-                          width: '60px',
-                          height: '60px',
-                          objectFit: 'contain',
+                          width: i === 1 ? "80px" : "200px",
+                          height: "auto",
+                          objectFit: "contain",
                           flexShrink: 0,
-                          background: 'transparent',
-                          position: 'relative',
-                          left: element.title === 'Lead Generation' ? '-14px' : '-9px',
+                          background: "transparent",
+                          position: "relative",
                         }}
                       />
-                      <div style={{ flex: 1 }}>
-                        <h4
-                          style={{
-                            color: '#ffffff',
-                            marginBottom: '0',
-                            fontSize: '20px',
-                            fontWeight: '600',
-                            marginTop: '0',
-                          }}
-                          dangerouslySetInnerHTML={{
-                            __html: element.title.replace(' ', '<br />'),
-                          }}
-                        ></h4>
-                      </div>
                     </div>
-                    <p
+                    <div
                       style={{
-                        color: '#cccccc',
-                        lineHeight: '1.6',
-                        marginBottom: '20px',
-                        textAlign: 'left',
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
                       }}
                     >
-                      {element.desc}
-                    </p>
-                    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                      <a
-                        href={element.btnUrl}
-                        className="primary-btn"
+                      <p
                         style={{
-                          height: '35px',
-                          borderRadius: '20px',
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          paddingLeft: '25px',
-                          paddingRight: '25px',
-                          fontSize: '13px',
-                          lineHeight: '35px',
-                          fontWeight: '500',
-                          textDecoration: 'none',
-                          width: 'fit-content',
+                          color: "#cccccc",
+                          lineHeight: "1.6",
+                          textAlign: "left",
+                          marginBottom: "20px",
+                          flex: 1,
                         }}
                       >
-                        {element.btnText}
-                      </a>
+                        {element.desc}
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "flex-start",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <a
+                          href={element.btnUrl}
+                          className="primary-btn"
+                          style={{
+                            height: "35px",
+                            borderRadius: "20px",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            paddingLeft: "25px",
+                            paddingRight: "25px",
+                            fontSize: "13px",
+                            lineHeight: "35px",
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            width: "fit-content",
+                          }}
+                        >
+                          {element.btnText}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -119,81 +120,83 @@ class Features extends Component {
                   <div
                     className="service-card"
                     style={{
-                      backgroundColor: '#303030',
-                      borderRadius: '15px',
-                      padding: '30px',
-                      height: '100%',
-                      border: '1px solid #333',
-                      display: 'flex',
-                      flexDirection: 'column',
+                      backgroundColor: "#303030",
+                      borderRadius: "15px",
+                      padding: "30px",
+                      height: "100%",
+                      border: "1px solid #333",
+                      display: "flex",
+                      flexDirection: "column",
                     }}
                   >
                     <div
                       style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        marginBottom: '20px',
+                        display: "flex",
+                        alignItems: "center",
+                        marginBottom: "30px",
                       }}
                     >
                       <img
                         src={element.icon}
                         alt={element.title}
                         style={{
-                          width: '60px',
-                          height: '60px',
-                          objectFit: 'contain',
+                          width: "200px",
+                          height: "auto",
+                          objectFit: "contain",
                           flexShrink: 0,
-                          background: 'transparent',
-                          position: 'relative',
-                          left: '-9px',
+                          background: "transparent",
+                          position: "relative",
+                          marginBottom: "20px",
                         }}
                       />
-                      <div style={{ flex: 1 }}>
-                        <h4
-                          style={{
-                            color: '#ffffff',
-                            marginBottom: '0',
-                            fontSize: '20px',
-                            fontWeight: '600',
-                            marginTop: '0',
-                          }}
-                          dangerouslySetInnerHTML={{
-                            __html: element.title.replace(' ', '<br />'),
-                          }}
-                        ></h4>
-                      </div>
                     </div>
-                    <p
+                    <div
                       style={{
-                        color: '#cccccc',
-                        lineHeight: '1.6',
-                        marginBottom: '20px',
-                        textAlign: 'left',
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
                       }}
                     >
-                      {element.desc}
-                    </p>
-                    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                      <a
-                        href={element.btnUrl}
-                        className="primary-btn"
+                      <p
                         style={{
-                          height: '35px',
-                          borderRadius: '20px',
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          paddingLeft: '25px',
-                          paddingRight: '25px',
-                          fontSize: '13px',
-                          lineHeight: '35px',
-                          fontWeight: '500',
-                          textDecoration: 'none',
-                          width: 'fit-content',
+                          color: "#cccccc",
+                          lineHeight: "1.6",
+                          marginBottom: "20px",
+                          textAlign: "left",
+                          flex: 1,
                         }}
                       >
-                        {element.btnText}
-                      </a>
+                        {element.desc}
+                      </p>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "flex-start",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <a
+                          href={element.btnUrl}
+                          className="primary-btn"
+                          style={{
+                            height: "35px",
+                            borderRadius: "20px",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            paddingLeft: "25px",
+                            paddingRight: "25px",
+                            fontSize: "13px",
+                            lineHeight: "35px",
+                            fontWeight: "500",
+                            textDecoration: "none",
+                            width: "fit-content",
+                          }}
+                        >
+                          {element.btnText}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

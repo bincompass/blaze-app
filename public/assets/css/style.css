@@ -48,8 +48,8 @@
 -------------------------------------------------------- */
 /* @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i'); */
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 
 /*  ----------------------------------------------------
 2. GENERAL
@@ -59,7 +59,7 @@ body {
   line-height: 1.7em;
   font-weight: 400;
   color: #677294;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #131313;
 }
 h1,
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 15px;
   font-weight: 600;
   color: rgb(48, 48, 48);
@@ -317,7 +317,7 @@ button.primary-btn {
 }
 .lines:before,
 .lines:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   width: 30px;
@@ -391,7 +391,7 @@ button.primary-btn {
   width: 70px;
 }
 .loader:before {
-  content: '';
+  content: "";
   display: block;
   padding-top: 100%;
 }
@@ -616,7 +616,7 @@ button.primary-btn {
 .header .nav li a:before {
   background: #346afe;
   bottom: -5px;
-  content: '';
+  content: "";
   height: 1px;
   position: absolute;
   right: 0;
@@ -632,7 +632,7 @@ button.primary-btn {
 }
 .header .nav li a:after {
   background: #346afe;
-  content: '';
+  content: "";
   height: 1px;
   left: 0;
   position: absolute;
@@ -1099,8 +1099,6 @@ button.primary-btn {
   box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
 }
 
-.aboutIntroText {
-}
 .aboutIntroText h2 {
   font-size: 45px;
 }
@@ -1117,11 +1115,10 @@ button.primary-btn {
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url('../img/bg-about.png');
+  background-image: url("../img/bg-about.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -1136,7 +1133,7 @@ button.primary-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 32px 48px;
 }
 
 .about-left h2 {
@@ -1152,16 +1149,16 @@ button.primary-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 32px 48px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .about-right p {
   color: white;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   margin: 0;
-  line-height: 1.8;
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -1170,6 +1167,7 @@ button.primary-btn {
   .about-container {
     grid-template-columns: 1fr;
     min-height: auto;
+    gap: 24px;
   }
 
   .about-left {
@@ -1203,7 +1201,7 @@ button.primary-btn {
   }
 
   .about-right {
-    padding: 0 16px;
+    padding: 16px;
   }
 
   .about-right p {
@@ -1324,11 +1322,11 @@ button.primary-btn {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  
+
   .work-card {
     height: 400px;
   }
-  
+
   .work-card-image {
     height: 200px;
   }
@@ -1339,47 +1337,47 @@ button.primary-btn {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .work-card {
     height: auto;
     min-height: 320px;
   }
-  
+
   .work-card-inner {
     min-height: 320px;
   }
-  
+
   .work-card-front,
   .work-card-back {
     position: absolute;
     min-height: 320px;
   }
-  
+
   .work-card-image {
     height: 180px;
   }
-  
+
   .work-card-front {
     padding: 12px;
   }
-  
+
   .work-card-content {
     padding: 0 12px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  
+
   .work-card-content h3 {
     font-size: 1.8rem;
     margin-bottom: 6px;
   }
-  
+
   .work-card-content p {
     font-size: 1.1rem;
     line-height: 1.4;
     -webkit-line-clamp: 3;
   }
-  
+
   .work-card-back p {
     font-size: 1.3rem;
     padding: 20px;
@@ -1391,44 +1389,45 @@ button.primary-btn {
   .work-grid {
     gap: 12px;
   }
-  
+
   .work-card {
     min-height: 300px;
   }
-  
+
   .work-card-inner {
     min-height: 300px;
   }
-  
+
   .work-card-front,
   .work-card-back {
     min-height: 300px;
   }
-  
+
   .work-card-image {
     height: 160px;
   }
-  
+
   .work-card-front {
     padding: 10px;
   }
-  
+
   .work-card-content {
     padding: 0 10px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
   .work-card-content h3 {
     font-size: 1.6rem;
     margin-bottom: 5px;
   }
-  
+
   .work-card-content p {
-    font-size: 1.05rem;
+    font-size: 1.4rem;
     line-height: 1.3;
+    margin-top: 8px;
   }
-  
+
   .work-card-back p {
     font-size: 1.15rem;
     padding: 15px;
@@ -1474,7 +1473,7 @@ button.primary-btn {
 }
 .how-works-item:after,
 .how-works-item:before {
-  content: '';
+  content: "";
   width: 50%;
   border-top: 1px solid;
   position: absolute;
@@ -1524,7 +1523,7 @@ button.primary-btn {
 .overlay:before,
 .overlay:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   width: 100%;
   background: rgb(48, 48, 48);
@@ -1689,9 +1688,9 @@ div#accordion .card-body {
   transition: border-radius linear 0s;
 }
 .panel-heading a:before {
-  content: '\e146';
+  content: "\e146";
   position: absolute;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   right: 5px;
   top: 10px;
   font-size: 24px;
@@ -1701,17 +1700,17 @@ div#accordion .card-body {
   transform: scale(1);
 }
 .panel-heading.active a:before {
-  content: ' ';
+  content: " ";
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 #bs-collapse .card-header button:after {
-  content: ' ';
+  content: " ";
   font-size: 24px;
   position: absolute;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   right: 5px;
   top: 10px;
   -webkit-transform: scale(0);
@@ -1720,17 +1719,17 @@ div#accordion .card-body {
   transition: all 0.5s;
 }
 #bs-collapse .card-header.active a:after {
-  content: '\e909';
+  content: "\e909";
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 #accordion .card-header button:before {
-  content: '\e316';
+  content: "\e316";
   font-size: 24px;
   position: absolute;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   right: 5px;
   top: 10px;
   -webkit-transform: rotate(180deg);
@@ -1974,12 +1973,12 @@ div#accordion .card-body {
   top: -50px;
   right: 0;
 }
-.owl-theme .owl-nav [class*='owl-'] {
+.owl-theme .owl-nav [class*="owl-"] {
   padding: 4px 14px;
   font-size: 20px;
   background: rgb(48, 48, 48);
 }
-.owl-theme .owl-nav [class*='owl-']:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
   background: #677294;
 }
 .blog-category,
@@ -1997,7 +1996,7 @@ div#accordion .card-body {
 .blog-category a:not(:last-child):after,
 .blog-tags a:not(:last-child):after,
 .blog-meta .blog-category a:not(:last-child):after {
-  content: ',';
+  content: ",";
   position: absolute;
   top: 0px;
 }
@@ -2019,7 +2018,7 @@ div#accordion .card-body {
   .contact-heading {
     font-size: 42px;
   }
-  
+
   .contact-subtitle {
     font-size: 28px;
   }
@@ -2029,7 +2028,7 @@ div#accordion .card-body {
   .contact-heading {
     font-size: 44px;
   }
-  
+
   .contact-subtitle {
     font-size: 24px;
     margin-top: 10px;
@@ -2041,7 +2040,7 @@ div#accordion .card-body {
   .contact-heading {
     font-size: 40px;
   }
-  
+
   .contact-subtitle {
     font-size: 22px;
     margin-top: 8px;
@@ -2326,7 +2325,7 @@ textarea.form-control.textarea-box {
   position: relative;
 }
 .widget.widget_search #searchform:after {
-  content: '\f002';
+  content: "\f002";
   font-family: FontAwesome;
   right: 15px;
   position: absolute;
@@ -2350,7 +2349,7 @@ textarea.form-control.textarea-box {
   position: relative;
 }
 .widget h3:before {
-  content: '';
+  content: "";
   width: 60px;
   height: 5px;
   background: #346afe;
@@ -2376,10 +2375,10 @@ textarea.form-control.textarea-box {
   padding-left: 15px;
 }
 .widget ul li::before {
-  content: '\f0da';
+  content: "\f0da";
   position: absolute;
   left: 0;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   color: #333;
   transition: all 0.5s;
   opacity: 1;

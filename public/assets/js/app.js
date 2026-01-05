@@ -105,6 +105,11 @@
 			return false;
 		});	
 	}
+
+	/******************** 20. WOW JS ********************/
+	PATH.wowJS = function () {
+		new WOW().init();
+	}
 				
 	/* Document ready function */
 	
@@ -114,6 +119,7 @@
 		PATH.ssPopUp();
 		PATH.videoModal();
 		PATH.scrollToUp();
+		PATH.wowJS();
 	});
 	
 	/* Window on scroll function */
