@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typed from "react-typed";
 import homedata from "../../data/home.json";
+import { HashLink as HLink } from "react-router-hash-link";
 
 class Hero extends Component {
   render() {
@@ -92,10 +93,12 @@ class Hero extends Component {
                       lineHeight: "1.1",
                     }}
                   >
+                    {getData.title3}{" "}
                     <Typed
-                      strings={[getData.title3]}
+                      strings={getData.titles}
                       typeSpeed={100}
-                      backDelay={2500}
+                      backSpeed={50}
+                      backDelay={2000}
                       loop
                       style={{ whiteSpace: "pre" }}
                     />
@@ -114,8 +117,8 @@ class Hero extends Component {
                 </p>
               </div>
               <div style={{ paddingLeft: "32px" }}>
-                <a
-                  href={getData.button.btnurl1}
+                <HLink
+                  to={`/#contact`}
                   className="primary-btn"
                   style={{
                     height: "40px",
@@ -130,7 +133,7 @@ class Hero extends Component {
                   }}
                 >
                   {getData.button.btn1}
-                </a>
+                </HLink>
               </div>
             </div>
           </div>

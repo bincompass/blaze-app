@@ -8,7 +8,7 @@ class Work extends Component {
 
     return (
       <section
-        id="our-work"
+        id="our-portfolio"
         className="pt100 pb100"
         style={{ backgroundColor: "rgb(48, 48, 48)" }}
       >

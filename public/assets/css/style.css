@@ -54,6 +54,20 @@
 /*  ----------------------------------------------------
 2. GENERAL
 -------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 16px;
   line-height: 1.7em;
@@ -289,6 +303,28 @@ button.primary-btn {
 .bottom-pattern {
   position: absolute;
   bottom: -4px;
+}
+.service-card {
+  transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(237, 68, 37, 0.2);
+  border-color: #ed4425 !important;
+}
+.about-card {
+  transition: all 0.3s ease-in-out;
+}
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(237, 68, 37, 0.2);
+  border-color: #ed4425 !important;
+}
+.service-card-text {
+  text-align: left;
+}
+.service-card-btn-wrapper {
+  justify-content: flex-start;
 }
 /* -2.6 SECTION TITLE */
 .section-title h2 {
@@ -1156,7 +1192,7 @@ button.primary-btn {
 
 .about-right p {
   color: white;
-  font-size: 1.9rem;
+  font-size: 16px;
   margin: 0;
   line-height: 1.5;
   font-weight: 400;
@@ -1298,7 +1334,7 @@ button.primary-btn {
 
 .work-card-content p {
   color: white;
-  font-size: 1.3rem;
+  font-size: 14px;
   line-height: 1.6;
   margin: 0;
   display: -webkit-box;
@@ -1368,7 +1404,7 @@ button.primary-btn {
   }
 
   .work-card-content h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 6px;
   }
 
@@ -1418,12 +1454,12 @@ button.primary-btn {
   }
 
   .work-card-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 5px;
   }
 
   .work-card-content p {
-    font-size: 1.4rem;
+    font-size: 16px;
     line-height: 1.3;
     margin-top: 8px;
   }
@@ -2156,22 +2192,20 @@ textarea.form-control.textarea-box {
 /*  ----------------------------------------------------
 17. FOOTER SECTION
 -------------------------------------------------------- */
-.social-icons {
-  margin-bottom: 30px;
-}
+
 .social-icons ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  gap: 16px;
 }
 .social-icons ul li {
   display: inline;
+  margin-right: 0 !important;
 }
 .social-icons ul li a {
   display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
   border: 1px dashed #ccc;
   width: 40px;
   height: 40px;

@@ -2,7 +2,8 @@
   "herov1": {
     "title": "TURN",
     "title2": "ATTENTION",
-    "title3": "into Growth Flawless events.",
+    "title3": "into",
+    "titles": ["Growth.", "Flawless.", "Events."],
     "desc": "We help brands grow through data-driven strategy, creative storytelling, and measurable performance.",
     "button": {
       "btn1": "Let’s Work Together",
@@ -109,28 +110,47 @@
       "title": "Frequently Asked <span>Questions</span>",
       "desc": "Get answers to the most common questions about our services and process."
     },
-    "title": "Have Questions? We Have Answers",
     "image": "/assets/img/faq.png",
     "accordionContent": [
       {
-        "title": "What services do you offer?",
-        "content": "We offer comprehensive digital marketing services including brand strategy, web development, digital marketing campaigns, social media management, and creative design solutions tailored to your business needs."
+        "title": "What services does Blaze Media offer?",
+        "content": "Blaze Media provides full marketing solutions including:\n- Social media management\n- Content creation (design, video, copywriting)\n- Paid ads (Meta, Google, TikTok)\n- Branding & visual identity\n- Marketing strategy & consulting"
       },
       {
-        "title": "How long does a typical project take?",
-        "content": "Project timelines vary depending on scope and complexity. A simple website redesign might take 4-6 weeks, while a complete brand transformation could take 8-12 weeks. We'll provide a detailed timeline during our initial consultation."
+        "title": "Who do you work with?",
+        "content": "We work with startups, small businesses, and growing brands across different industries. If you’re serious about growth, we’re your people."
       },
       {
-        "title": "Do you work with small businesses?",
-        "content": "Absolutely! We work with businesses of all sizes, from startups to enterprise companies. We understand that every business has unique needs and budget considerations, and we tailor our services accordingly."
+        "title": "Do you offer customized marketing plans?",
+        "content": "Yes! Every brand is different, so we create tailored strategies based on your goals, budget, and target audience."
       },
       {
-        "title": "What is your design process?",
-        "content": "Our process starts with understanding your goals and target audience. We then move through research, strategy, design concepts, feedback rounds, and final implementation. We keep you involved at every step to ensure the final result exceeds your expectations."
+        "title": "How long does it take to see results?",
+        "content": "It depends on the service, but generally:\n- Branding & content: visible improvement within the first month\n- Paid ads & growth campaigns: results usually start showing within 2-4 weeks\n\nMarketing is a process—not magic, but we make it effective."
       },
       {
-        "title": "Do you provide ongoing support?",
-        "content": "Yes, we offer various ongoing support packages including website maintenance, content updates, performance monitoring, and continuous optimization to ensure your digital presence stays current and effective."
+        "title": "Do you handle everything or just social media?",
+        "content": "We can do both.\nYou can choose:\n- A single service (like social media or ads)\n- Or a full marketing package where we handle everything end-to-end"
+      },
+      {
+        "title": "How do we start working together?",
+        "content": "Simple:\n- Contact us\n- We schedule a quick call\n- We understand your needs\n- We send a proposal\n- Let the magic begin"
+      },
+      {
+        "title": "Do you work with monthly contracts?",
+        "content": "Yes, most of our services are offered on a monthly basis, but we are flexible depending on the project."
+      },
+      {
+        "title": "What makes Blaze Media different?",
+        "content": "Creative thinking + data-driven strategy.\nClear communication.\nA team that treats your brand like it’s their own.\nWe don’t just market—we build brands."
+      },
+      {
+        "title": "Can you work with our existing brand identity?",
+        "content": "Absolutely. We can either develop a new identity or enhance what you already have."
+      },
+      {
+        "title": "How can we contact Blaze Media?",
+        "content": "You can reach us via:\n- Instagram / social media\n- WhatsApp: +201070649922"
       }
     ]
   },
@@ -145,25 +165,19 @@
           "title": "Markitchen",
           "icon": "/assets/img/portfolio/markitchen.png",
           "desc": "Digital Marketing that maximizes presence and ROI across all platforms.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
+          "btnText": "Learn More"
         },
         {
           "title": "LeadGen",
           "icon": "/assets/img/portfolio/lead-gen.png",
           "desc": "Lead generation campaigns designed to identify and convert qualified leads into sales-ready prospects.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
-        }
-      ],
-      "image": "/assets/img/feature-image.png",
-      "featurePart2": [
+          "btnText": "Learn More"
+        },
         {
           "title": "Event Essentials",
           "icon": "/assets/img/portfolio/event-essentials.png",
           "desc": "Where event planning, execution, and experience come together.",
-          "btnText": "Learn More",
-          "btnUrl": "#"
+          "btnText": "Learn More"
         }
       ]
     }

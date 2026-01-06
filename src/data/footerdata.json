@@ -1,27 +1,15 @@
 {
   "socialicon": [
-      {
-        "icon": "fa fa-facebook",
-        "url": "#",
-        "class": "facebook"
-      },
-      {
-        "icon": "fa fa-twitter",
-        "url": "#",
-        "class": "twitter"
-      },
-      {
-        "icon": "fa fa-instagram",
-        "url": "#",
-        "class": "instagram"
-      },
-      {
-        "icon": "fa fa-linkedin",
-        "url": "#",
-        "class": "linked-in"
-      }
-
-    ],
-  "copyrighttext": " &copy; Copyright BLAZE MEDIA 2025. All Rights Reserved."
-
+    {
+      "icon": "fa fa-facebook",
+      "url": "https://www.facebook.com/share/1DNA77dQLt/?mibextid=wwXIfr",
+      "class": "facebook"
+    },
+    {
+      "icon": "fa fa-instagram",
+      "url": "https://www.instagram.com/blazemedia.egypt?igsh=aWRnb2NmYWdkYXdu",
+      "class": "instagram"
+    }
+  ],
+  "copyrighttext": " &copy; Copyright BLAZE MEDIA 2025."
 }

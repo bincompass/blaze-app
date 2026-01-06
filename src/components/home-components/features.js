@@ -39,22 +39,24 @@ class Features extends Component {
                       height: "100%",
                       border: "1px solid #333",
                       display: "flex",
+                      gap: "24px",
                       flexDirection: "column",
+                      transition: "all 0.3s ease-in-out",
                     }}
                   >
                     <div
                       style={{
                         display: "flex",
                         alignItems: "center",
-                        marginBottom: i === 0 ? "80px" : "30px",
+                        justifyContent: "inherit",
                       }}
                     >
                       <img
                         src={element.icon}
                         alt={element.title}
                         style={{
-                          width: i === 1 ? "80px" : "200px",
-                          height: "auto",
+                          width: i === 0 ? "250px" : "200px",
+                          height: "65px",
                           objectFit: "contain",
                           flexShrink: 0,
                           background: "transparent",
@@ -71,132 +73,16 @@ class Features extends Component {
                       }}
                     >
                       <p
+                        className="service-card-text"
                         style={{
                           color: "#cccccc",
                           lineHeight: "1.6",
-                          textAlign: "left",
                           marginBottom: "20px",
                           flex: 1,
                         }}
                       >
                         {element.desc}
                       </p>
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "flex-start",
-                          marginTop: "auto",
-                        }}
-                      >
-                        <a
-                          href={element.btnUrl}
-                          className="primary-btn"
-                          style={{
-                            height: "35px",
-                            borderRadius: "20px",
-                            display: "inline-flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            paddingLeft: "25px",
-                            paddingRight: "25px",
-                            fontSize: "13px",
-                            lineHeight: "35px",
-                            fontWeight: "500",
-                            textDecoration: "none",
-                            width: "fit-content",
-                          }}
-                        >
-                          {element.btnText}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-            {featureContent.featurePart2.map((element, i) => {
-              return (
-                <div key={`part2-${i}`} className="col-lg-4 col-md-6 mb-4">
-                  <div
-                    className="service-card"
-                    style={{
-                      backgroundColor: "#303030",
-                      borderRadius: "15px",
-                      padding: "30px",
-                      height: "100%",
-                      border: "1px solid #333",
-                      display: "flex",
-                      flexDirection: "column",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        marginBottom: "30px",
-                      }}
-                    >
-                      <img
-                        src={element.icon}
-                        alt={element.title}
-                        style={{
-                          width: "200px",
-                          height: "auto",
-                          objectFit: "contain",
-                          flexShrink: 0,
-                          background: "transparent",
-                          position: "relative",
-                          marginBottom: "20px",
-                        }}
-                      />
-                    </div>
-                    <div
-                      style={{
-                        flex: 1,
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                      }}
-                    >
-                      <p
-                        style={{
-                          color: "#cccccc",
-                          lineHeight: "1.6",
-                          marginBottom: "20px",
-                          textAlign: "left",
-                          flex: 1,
-                        }}
-                      >
-                        {element.desc}
-                      </p>
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "flex-start",
-                          marginTop: "auto",
-                        }}
-                      >
-                        <a
-                          href={element.btnUrl}
-                          className="primary-btn"
-                          style={{
-                            height: "35px",
-                            borderRadius: "20px",
-                            display: "inline-flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            paddingLeft: "25px",
-                            paddingRight: "25px",
-                            fontSize: "13px",
-                            lineHeight: "35px",
-                            fontWeight: "500",
-                            textDecoration: "none",
-                            width: "fit-content",
-                          }}
-                        >
-                          {element.btnText}
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>

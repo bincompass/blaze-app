@@ -27,7 +27,7 @@ class AboutIntro extends Component {
                       backgroundColor: "#1a1a1a",
                       borderRadius: "20px",
                       border: "1px solid #333",
-                      transition: "all 0.3s ease",
+                      transition: "all 0.3s ease-in-out",
                     }}
                   >
                     <h3
@@ -42,8 +42,8 @@ class AboutIntro extends Component {
                     </h3>
                     <p
                       style={{
-                        color: "#fff",
-                        fontSize: "1.4rem",
+                        color: "rgb(204, 204, 204)",
+                        fontSize: "16px",
                         lineHeight: "1.6",
                       }}
                     >

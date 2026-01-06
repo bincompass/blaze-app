@@ -1,31 +1,31 @@
-import React, { Component } from 'react';
-import { HashLink as HLink } from 'react-router-hash-link';
+import React, { Component } from "react";
+import { HashLink as HLink } from "react-router-hash-link";
 
 class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      addClass: 'Say hello',
+      addClass: "Say hello",
       isMenuOpen: false,
     };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll.bind(this));
+    window.addEventListener("scroll", this.handleScroll.bind(this));
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll.bind(this));
+    window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
   handleScroll() {
     let lastScrollY = window.scrollY;
 
     if (lastScrollY >= 60) {
       this.setState((state, props) => ({
-        addClass: 'nav-sticky',
+        addClass: "nav-sticky",
       }));
     } else {
       this.setState((state, props) => ({
-        addClass: '',
+        addClass: "",
       }));
     }
   }
@@ -42,7 +42,7 @@ class Navbar extends Component {
     });
   };
   render() {
-    let logoAlt = 'Blaze';
+    let logoAlt = "Blaze";
 
     return (
       <div>
@@ -53,16 +53,16 @@ class Navbar extends Component {
             <a
               className="navbar-brand logo"
               href="/"
-              style={{ marginLeft: '-8px', display: 'block' }}
+              style={{ marginLeft: "-8px", display: "block" }}
             >
               <img
                 className="logo-dark"
-                src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
+                src={process.env.PUBLIC_URL + "/assets/img/logo.png"}
                 alt={logoAlt}
               />
               <img
                 className="logo-light"
-                src={process.env.PUBLIC_URL + '/assets/img/logo.png'}
+                src={process.env.PUBLIC_URL + "/assets/img/logo.png"}
                 alt={logoAlt}
               />
             </a>
@@ -73,27 +73,27 @@ class Navbar extends Component {
               data-target="#navbarCodeply"
               onClick={this.toggleMenu}
               style={{
-                border: '1px solid #ffffff',
-                backgroundColor: 'transparent',
-                color: '#ffffff',
+                border: "1px solid #ffffff",
+                backgroundColor: "transparent",
+                color: "#ffffff",
               }}
             >
               {this.state.isMenuOpen ? (
                 <i
                   className="fa fa-times"
-                  style={{ fontSize: '18px', color: '#ffffff' }}
+                  style={{ fontSize: "18px", color: "#ffffff" }}
                 ></i>
               ) : (
                 <i
                   className="fa fa-bars"
-                  style={{ fontSize: '18px', color: '#ffffff' }}
+                  style={{ fontSize: "18px", color: "#ffffff" }}
                 ></i>
               )}
             </button>
 
             <div
               className={`collapse navbar-collapse ${
-                this.state.isMenuOpen ? 'show' : ''
+                this.state.isMenuOpen ? "show" : ""
               }`}
               id="navbarCodeply"
             >
@@ -122,10 +122,10 @@ class Navbar extends Component {
                   <HLink
                     className="nav-link"
                     smooth
-                    to={`/#about`}
+                    to={`/#our-portfolio`}
                     onClick={this.closeMenu}
                   >
-                    Work
+                    Portfolio
                   </HLink>
                 </li>
                 <li>
