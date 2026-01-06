@@ -124,7 +124,7 @@ class Footer extends Component {
               <div
                 dangerouslySetInnerHTML={{ __html: FooterData.copyrighttext }}
               ></div>
-              <div>
+              <div style={{ fontSize: "15px" }}>
                 Maintained and powered by{" "}
                 <a
                   href="https://architechs.ca/"
@@ -142,7 +142,7 @@ class Footer extends Component {
                     (e.currentTarget.style.textDecoration = "none")
                   }
                 >
-                  architechs
+                  Architechs
                 </a>
               </div>
             </div>

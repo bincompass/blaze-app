@@ -3,7 +3,7 @@
     "title": "TURN",
     "title2": "ATTENTION",
     "title3": "into",
-    "titles": ["Growth.", "Flawless.", "Events."],
+    "titles": ["Growth.", "Flawless Events."],
     "desc": "We help brands grow through data-driven strategy, creative storytelling, and measurable performance.",
     "button": {
       "btn1": "Let’s Work Together",
@@ -117,10 +117,6 @@
         "content": "Blaze Media provides full marketing solutions including:\n- Social media management\n- Content creation (design, video, copywriting)\n- Paid ads (Meta, Google, TikTok)\n- Branding & visual identity\n- Marketing strategy & consulting"
       },
       {
-        "title": "Who do you work with?",
-        "content": "We work with startups, small businesses, and growing brands across different industries. If you’re serious about growth, we’re your people."
-      },
-      {
         "title": "Do you offer customized marketing plans?",
         "content": "Yes! Every brand is different, so we create tailored strategies based on your goals, budget, and target audience."
       },
@@ -137,20 +133,12 @@
         "content": "Simple:\n- Contact us\n- We schedule a quick call\n- We understand your needs\n- We send a proposal\n- Let the magic begin"
       },
       {
-        "title": "Do you work with monthly contracts?",
-        "content": "Yes, most of our services are offered on a monthly basis, but we are flexible depending on the project."
-      },
-      {
         "title": "What makes Blaze Media different?",
         "content": "Creative thinking + data-driven strategy.\nClear communication.\nA team that treats your brand like it’s their own.\nWe don’t just market—we build brands."
       },
       {
         "title": "Can you work with our existing brand identity?",
         "content": "Absolutely. We can either develop a new identity or enhance what you already have."
-      },
-      {
-        "title": "How can we contact Blaze Media?",
-        "content": "You can reach us via:\n- Instagram / social media\n- WhatsApp: +201070649922"
       }
     ]
   },
