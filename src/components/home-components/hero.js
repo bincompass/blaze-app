@@ -44,55 +44,14 @@ class Hero extends Component {
         >
           <div className="row">
             <div className="col-lg-7 col-md-9">
-              <div
-                className="hero-content"
-                style={{
-                  padding: "32px",
-                  background: "rgba(0, 0, 0, 0.6)",
-                  backdropFilter: "blur(5px)",
-                  borderRadius: "12px",
-                  width: "100%",
-                  marginBottom: "30px",
-                }}
-              >
+              <div className="hero-content hero-content-box">
                 <h1
                   className="wow fadeInLeft"
                   data-wow-delay=".1s"
-                  style={{ marginBottom: "25px" }}
                 >
-                  <span
-                    style={{
-                      color: "#ed4425",
-                      fontSize: "5rem",
-                      fontWeight: "bold",
-                      display: "block",
-                      lineHeight: "1",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {getData.title}
-                  </span>
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      color: "#ffffff",
-                      fontSize: "4rem",
-                      display: "block",
-                      lineHeight: "1.1",
-                      marginBottom: "5px",
-                    }}
-                  >
-                    {getData.title2}
-                  </span>
-                  <span
-                    style={{
-                      fontWeight: "normal",
-                      color: "#ffffff",
-                      fontSize: "3.2rem",
-                      display: "block",
-                      lineHeight: "1.1",
-                    }}
-                  >
+                  <span className="hero-title-1">{getData.title}</span>
+                  <span className="hero-title-2">{getData.title2}</span>
+                  <span className="hero-title-3">
                     {getData.title3}{" "}
                     <Typed
                       strings={getData.titles}
@@ -104,34 +63,10 @@ class Hero extends Component {
                     />
                   </span>
                 </h1>
-                <p
-                  style={{
-                    color: "#cccccc",
-                    fontSize: "1.5rem",
-                    lineHeight: "1.7",
-                    marginBottom: "0",
-                    maxWidth: "90%",
-                  }}
-                >
-                  {getData.desc}
-                </p>
+                <p className="hero-description">{getData.desc}</p>
               </div>
-              <div style={{ paddingLeft: "32px" }}>
-                <HLink
-                  to={`/#contact`}
-                  className="primary-btn"
-                  style={{
-                    height: "40px",
-                    borderRadius: "25px",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    paddingLeft: "40px",
-                    paddingRight: "40px",
-                    fontSize: "1.5rem",
-                    lineHeight: "40px",
-                    fontWeight: "500",
-                  }}
-                >
+              <div className="hero-btn-wrapper">
+                <HLink to={`/#contact`} className="primary-btn hero-btn">
                   {getData.button.btn1}
                 </HLink>
               </div>
